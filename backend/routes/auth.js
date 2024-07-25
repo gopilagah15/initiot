@@ -23,10 +23,8 @@ router.get('/createuser',[
         name: req.body.name,
         email: req.body.email,
         password: req.body.password
-      }).then(user => res.json(user))
-      .catch(err=>{console.log(err);
-        res.json({errors:'Please enter a valid email',message:err.message})
       })
+      
           
     } catch (error) {
         console.log(error);
